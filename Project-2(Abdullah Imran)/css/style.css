@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clr{
+    clear: both;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*Common css end here*/
+
+.full{
+    width: 100%;
+}
+
+.main{
+    width: 1140px;
+    margin: auto;
+}
+
+.nav{
+    background-color: #02918c;
+    padding: 20px 0;
+    
+}
+.logo{
+    float: left;
+    width: 30%;
+    
+}
+
+.menubar{
+    float: left;
+    width: 70%;
+    text-align: right;
+    
+}
+
+.menubar ul li{
+    display: inline-block;
+    
+}
+
+.menubar ul li a{
+    padding: 0 30px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    transition: all 0.5s linear;
+    text-transform: uppercase;
+    
+}
+
+.menubar ul li a:hover{
+    color: #cfc91d;
+}
+/*end of header part*/
+
+.banner{
+    background: url(../images/overlay.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 210px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.banner:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.banner-txt{
+    color: #fff;
+    text-align: center;
+}
+.banner-txt h4{
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+.banner-txt h1{
+    font-weight: 800;
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+}
+.banner-txt p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.banner-shape{
+    margin: 50px 0;
+}
+.banner-txt button{
+    border-style: none;
+    background-color: #cfc91d;
+    color: #000;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 18px 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    border: 1px  solid transparent;
+}
+.banner-txt button:hover{
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/*End of banner part*/
+
+
+.section{
+    padding: 100px 0;
+}
+.section-top{
+    text-align: center;
+}
+.section-top h1{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+}
+.section-top img{
+    padding: 40px 0;
+}
+.section-top p{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #7e8287;
+    width: 80%;
+    margin: auto;
+}
+.section-top p span{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.section-bottom{
+    padding-top: 90px;
+}
+.column1{
+    width: 25%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #7e8287;
+    box-sizing: border-box;
+    padding: 40px 0;
+    
+}
+.no-border{
+    border-right-style: none;
+}
+
+.column1 i{
+    font-size: 30px;
+    color: #02918c;
+    transition: all 0.5s linear;
+}
+.column1 h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 30px 0;
+}
+.column1 p{
+    line-height: 21px;
+    font-size: 11px;
+    font-weight: 400;
+     color: #7e8287;
+    padding: 0 50px;
+}
+.column1:hover{
+    background-color: #f1f1f1;
+}
+
+.column1:hover i{
+    color: orange;
+    transform: rotate(360deg);
+}
+
+/*End of 1st section*/
+
+.section2{
+    background: url(../images/section2.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.section-left{
+    width: 50%;
+}
+
+.section2 .section-top{
+    text-align: left;
+    
+}
+.section2 .section-top p{
+    width: 100%;
+}
+
+.section2 .column1{
+    width: 50%;
+    border-right-style: none;
+    text-align: left;
+    padding: 25px 0;
+}
+
+.section2 .column1 p{
+    padding: 0 70px 0 0;
+}
+
+/*End of section two*/
+
+.section3 .section-top{
+    padding: 80px 0;
+}
+
+.section3 .section-top p{
+    width: 60%;
+}
+
+.bottom{
+    width: 25%;
+    position: relative;
+    float: left;
+    line-height: 0;
+    
+}
+
+.bottom img{
+    width: 100%;
+    
+}
+
+
+.img-overlay{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(2, 145, 140, 0.57);
+    left: 10%;
+    top: 10%;
+    text-align: center;
+    color: #fff;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    line-height: normal;
+}
+
+.overlay-txt{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom:hover .img-overlay{
+    transform: scale(1);
+}
+
+/*End of section3*/
+
+.section4 .section-top{
+    padding: 80px 0;
+}
+
+.section4 .section-top p{
+    width: 60%;
+}
+
+/*End of section4*/
+
+.section5{
+    background-color: #0b0b0b;
+    text-align: center;
+    padding: 70px 0;
+    
+}
+
+.login{
+    width: 70%;
+    margin: auto;
+}
+
+.textbox{
+    border-bottom: 1px solid #7e8287;
+    padding: 10px 0;
+    margin-bottom: 70px;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.textbox textarea{
+    border: none;
+    outline: none;
+    background: none;
+    color:#7e8287;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.bdbtm{
+    width: 80%;
+    margin: auto;
+}
+.btn{
+    
+    border-style: none;
+    background-color: #cfc91d;
+    color: #000;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 18px 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    border: 1px  solid transparent;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/*End of section 5*/
+.footer{
+    padding: 30px 0;
+    background-color: #000;
+}
+
+.text h4{
+    font-size: 12px;
+    color: #7e8287;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+
+
+
+

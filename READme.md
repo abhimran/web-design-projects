@@ -1,0 +1,1 @@
+Here are some simple unresponsive web designing projects.
